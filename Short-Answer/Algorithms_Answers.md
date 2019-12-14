@@ -16,4 +16,10 @@ There is only 1 operation per ear
 
 ## Exercise II
 
-
+O(logn)
+egg_drop_soup(n, f, l, r):
+  while l <= r:
+    m = l+(r-1)//2
+    if n[m] == 'cracked': l = mid+1
+    else: r = mid-1
+  return l
